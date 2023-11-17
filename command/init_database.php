@@ -37,11 +37,7 @@ CREATE TABLE IF NOT EXISTS reservation (
     "start" DATE NOT NULL,
     "end" DATE NOT NULL,
     validated INTEGER DEFAULT (0) NOT NULL,
-    CONSTRAINT reservation_PK PRIMARY KEY (id),
     CONSTRAINT reservation_FK FOREIGN KEY ("user") REFERENCES users(id),
     CONSTRAINT reservation_FK_1 FOREIGN KEY (bedroom) REFERENCES bedroom(id)
 );
-');
-$pdo->query('
-    CREATE UNIQUE INDEX reservation_id_IDX ON reservation (id)
 ');
