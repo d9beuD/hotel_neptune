@@ -95,7 +95,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
     </div>
-    
 </div>
 
 <?php include __DIR__ . '/../_includes/document_end.php'; ?>
