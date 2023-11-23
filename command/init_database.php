@@ -8,7 +8,8 @@ $pdo->query('
         name VARCHAR(40) NOT NULL,
         firstname VARCHAR(40) NOT NULL,
         email VARCHAR(139) NOT NULL,
-        password VARCHAR(255) NOT NULL
+        password VARCHAR(255) NOT NULL,
+        isAdmin INT NOT NULL DEFAULT(0)
     )
 ');
 $pdo->query('

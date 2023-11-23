@@ -34,6 +34,12 @@
                             </a>
                         </li>
                         <li>
+                            <a href="/admin.php" class="dropdown-item">
+                                <i class="fa-solid fa-fw fa-user-shield"></i>
+                                Administration
+                            </a>
+                        </li>
+                        <li>
                             <a href="?action=logout" class="dropdown-item">
                                 <i class="fa-solid fa-fw fa-power-off"></i>
                                 Déconnexion
