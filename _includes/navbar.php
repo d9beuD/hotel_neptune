@@ -1,5 +1,5 @@
 <?php require_once __DIR__ . '/../bootstrap.php'; ?>
-<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
     <div class="container">
         <a class="navbar-brand" href="/">
             <i class="fa-solid fa-hotel"></i>
@@ -33,12 +33,14 @@
                                 Mon profil
                             </a>
                         </li>
-                        <li>
-                            <a href="/admin.php" class="dropdown-item">
-                                <i class="fa-solid fa-fw fa-user-shield"></i>
-                                Administration
-                            </a>
-                        </li>
+                        <?php if ($isAdmin) { ?>
+                            <li>
+                                <a href="/admin.php" class="dropdown-item">
+                                    <i class="fa-solid fa-fw fa-user-shield"></i>
+                                    Administration
+                                </a>
+                            </li>
+                        <?php } ?>
                         <li>
                             <a href="?action=logout" class="dropdown-item">
                                 <i class="fa-solid fa-fw fa-power-off"></i>
