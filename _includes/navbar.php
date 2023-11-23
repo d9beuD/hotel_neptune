@@ -25,7 +25,7 @@
                         <i class="fa-solid fa-circle-user"></i>
                         <?php echo $isLoggedIn ? $_SESSION['user']['firstname'] . ' ' . $_SESSION['user']['name'] : ''; ?>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <?php if ($isLoggedIn) { ?>
                         <li>
                             <a href="/profile.php" class="dropdown-item">
