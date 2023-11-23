@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                     <div class="text-end">
-                        <button class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary">
                             S'inscrire
                         </button>
                     </div>
